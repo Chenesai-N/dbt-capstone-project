@@ -271,7 +271,6 @@ SELECT
   ``` 
 * Execute an SQL on the Snowflake UI to ensure the new record has been added:
   ```
-  REPLACE THIS CODE BLOCK BY PASTING 
   1)  SELECT * FROM AIRSTATS.DEV.SILVER_AIRPORT_COMMENTS
     ORDER BY COMMENT_ID DESC 
     LIMIT 1;
