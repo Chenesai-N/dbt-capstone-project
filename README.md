@@ -293,11 +293,14 @@ The airport `Los Angeles County Sheriff's Department Heliport` (airport_ident: `
 
 * Updating the record to "closed":
   ```
-  REPLACE THIS BLOCK BY PASTING THE SQL you executed
+  UPDATE AIRSTATS.RAW.AIRPORTS 
+  SET TYPE = 'closed'
+  WHERE IDENT = '01CN';
   ```
 * Command to execute and snapshot update:
   ```
-  REPLACE THIS CODE BLOCK BY PASTING THE dbt COMMAND YOU EXECUTED
+  dbt run --select silver_airports
+  dbt snapshot --select silver_airports
   ``` 
 
 #### Analyses
