@@ -1,0 +1,18 @@
+
+sources:
+  - name: airstats
+    description: Raw airport data loaded into Snowflake
+    database: airstats
+    schema: raw
+    tables:
+      - name: airports
+        description: Global airport data
+        columns:
+          - name: id
+            tests:
+              - unique
+              - not_null
+      - name: airport_comments
+        description: User comments about airports
+      - name: runways
+        description: Runway information
