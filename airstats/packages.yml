@@ -1,0 +1,3 @@
+packages:
+  - package: metaplane/dbt_expectations
+    version: [">=0.10.0", "<0.11.0"]   # check hub.getdbt.com for the latest
